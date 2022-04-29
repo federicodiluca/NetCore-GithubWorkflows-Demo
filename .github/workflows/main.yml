@@ -12,9 +12,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
     - name: Set VERSION variable from tag
-      run: VERSION="${GITHUB_REF/refs\/tags\/v/}"
-    - name: Print VERSION
-      run: echo "VERSION=${VERSION}" >> $GITHUB_ENV
+      run: echo "VERSION=$(echo GITHUB_REF/refs\/tags\/v/)" >> $GITHUB_ENV
     - name: Build
       run: dotnet build NetCore-GithubWorkflows-Demo/NetCore-GithubWorkflows-Demo.csproj --configuration Release
     - name: Final Message
