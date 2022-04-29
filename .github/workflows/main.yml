@@ -16,8 +16,8 @@ jobs:
     - name: Print VERSION
       run: echo "VERSION=${VERSION}" >> $GITHUB_ENV
     - name: Build
-      run: dotnet build BOM-CLI --configuration Release
+      run: dotnet build NetCore-GithubWorkflows-Demo\NetCore-GithubWorkflows-Demo.csproj --configuration Release
     - name: Pack
-      run: dotnet pack BOM-CLI --configuration Release --no-build --output .
+      run: dotnet pack NetCore-GithubWorkflows-Demo\NetCore-GithubWorkflows-Demo.csproj --configuration Release --no-build --output .
     - name: Final Message
       run: echo "🎉 Success!"
