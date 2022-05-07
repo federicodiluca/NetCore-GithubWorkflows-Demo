@@ -1,6 +1,6 @@
 # Testing Github Workflows
 Simple Demo CRUD .NET 6 - Unit Testing Web Api.  
-Setting up a simple Github Workflows for Unit Testing following the [Github Guide](https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net).  
+Setting up a simple Github Workflow for Unit Testing following the [Github Guide](https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net).  
 Just create a [Workflow file](https://github.com/federicodiluca/NetCore-GithubWorkflows-Demo/blob/master/.github/workflows/test.yml)
 
 ## Testing Badge 
